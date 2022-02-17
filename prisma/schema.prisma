@@ -10,7 +10,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model Post {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
@@ -35,4 +34,5 @@ model User {
   name    String?
   posts   Post[]
   profile Profile?
+  adress  String
 }
